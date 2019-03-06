@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="classes">
+  <test thread-count="2" name="Regression 1(failed)" parallel="classes">
+    <classes>
+      <class name="AppTest.com.vishnu.app.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- AppTest.com.vishnu.app.TestRunner -->
+    </classes>
+  </test> <!-- Regression 1(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

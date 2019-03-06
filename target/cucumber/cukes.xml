@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="17.463579">
+<testcase classname="Title of your feature" name="Title of your scenario" time="17.463178">
+<system-out><![CDATA[Given I want to write a step with precondition..............................passed
+And some other precondition.................................................passed
+When I complete action......................................................passed
+And some other action.......................................................passed
+And yet another action......................................................passed
+Then I validate the outcomes................................................passed
+And check more outcomes.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario outline" time="0.00029">
+<system-out><![CDATA[Given I want to write a step with name1.....................................passed
+When I check for the 5 in step..............................................passed
+Then I verify the success in step...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario outline 2" time="0.000111">
+<system-out><![CDATA[Given I want to write a step with name2.....................................passed
+When I check for the 7 in step..............................................passed
+Then I verify the Fail in step..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
