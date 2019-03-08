@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="17.463579">
-<testcase classname="Title of your feature" name="Title of your scenario" time="17.463178">
-<system-out><![CDATA[Given I want to write a step with precondition..............................passed
-And some other precondition.................................................passed
-When I complete action......................................................passed
-And some other action.......................................................passed
-And yet another action......................................................passed
-Then I validate the outcomes................................................passed
-And check more outcomes.....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Title of your feature" name="Title of your scenario outline" time="0.00029">
-<system-out><![CDATA[Given I want to write a step with name1.....................................passed
-When I check for the 5 in step..............................................passed
-Then I verify the success in step...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Title of your feature" name="Title of your scenario outline 2" time="0.000111">
-<system-out><![CDATA[Given I want to write a step with name2.....................................passed
-When I check for the 7 in step..............................................passed
-Then I verify the Fail in step..............................................passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.56086">
+<testcase classname="Calculations" name="Open" time="11.56086">
+<failure message="org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'IC1384', ip: '172.28.70.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: AndroidDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.&#10;    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:826:9)&#10;    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:447:37)&#10;    at process._tickCallback (internal/process/next_tick.js:68:7)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'IC1384', ip: '172.28.70.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: AndroidDriver&#13;&#10;&#9;at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)&#13;&#10;&#9;at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)&#13;&#10;&#9;at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#13;&#10;&#9;at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)&#13;&#10;&#9;at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:95)&#13;&#10;&#9;at base.AppiumDriverSetup.setupDriver(AppiumDriverSetup.java:29)&#13;&#10;&#9;at hooks.AppiumHooks.initialize(AppiumHooks.java:36)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:63)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:49)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:40)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:40)&#13;&#10;&#9;at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)&#13;&#10;&#9;at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#13;&#10;&#9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#13;&#10;&#9;at java.lang.Thread.run(Thread.java:748)&#13;&#10;Caused by: java.lang.reflect.InvocationTargetException&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)&#13;&#10;&#9;... 42 more&#13;&#10;Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'IC1384', ip: '172.28.70.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: AndroidDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.&#10;    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:826:9)&#10;    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:447:37)&#10;    at process._tickCallback (internal/process/next_tick.js:68:7)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)&#13;&#10;&#9;at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)&#13;&#10;&#9;... 47 more&#13;&#10;"><![CDATA[Given user open calculator..................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IC1384', ip: '172.28.70.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:826:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IC1384', ip: '172.28.70.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:95)
+	at base.AppiumDriverSetup.setupDriver(AppiumDriverSetup.java:29)
+	at hooks.AppiumHooks.initialize(AppiumHooks.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.TestCase.run(TestCase.java:40)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 42 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IC1384', ip: '172.28.70.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find aapt Please set the ANDROID_HOME environment variable with the Android SDK root directory path.
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:826:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 47 more
+]]></failure>
 </testcase>
 </testsuite>

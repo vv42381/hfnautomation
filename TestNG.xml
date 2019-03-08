@@ -2,7 +2,7 @@
 <suite name="Parallel test suite" parallel="classes" thread-count="2">
   <test name="Regression 1">
     <classes>
-      <class name="AppTest.com.vishnu.app.TestRunner"/>
+      <class name="Runner.TestRunner"/>
       <!--  <class name="AppTest.com.vishnu.app.BaseTest2"/>-->
     </classes>
   </test>
