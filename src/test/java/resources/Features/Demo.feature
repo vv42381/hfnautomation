@@ -1,7 +1,8 @@
 @smoke
 Feature: Calculations
 	Scenario: Open
-  Given user open calculator
+  Given user open heartsapp
+  When user clicks on signin
 
   #@add
   #Scenario Outline: Addition

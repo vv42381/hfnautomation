@@ -51,6 +51,7 @@ public class AppiumDriverUtil {
     }
 
     public static List<MobileElement> getElements(By locator) {
+    	getDriver().manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
         return getDriver().findElements(locator);
     }
 

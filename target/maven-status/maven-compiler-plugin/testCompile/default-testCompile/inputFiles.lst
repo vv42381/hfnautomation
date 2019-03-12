@@ -1,1 +1,6 @@
-/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/AppTest/com/vishnu/app/AppTest.java
+/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/AppTest/com/vishnu/app/BaseTest2.java
+/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/pages/CalcPage.java
+/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/AppTest/com/vishnu/app/BaseTest1.java
+/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/steps/CalcPageSteps.java
+/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/hooks/AppiumHooks.java
+/Users/vishnu/eclipse-workspace/com.vishnu.app/src/test/java/Runner/TestRunner.java
