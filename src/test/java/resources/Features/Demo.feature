@@ -1,8 +1,22 @@
 @smoke
-Feature: Calculations
-	Scenario: Open
+Feature: Heartsapp E2E test
+	Scenario Outline: Signin and subcribe
   Given user open heartsapp
   When user clicks on signin
+  And user clicks on accept policy
+  And user clicks on Email
+  And user enters email <email>
+  And user enters password <password>
+  And user clicks submit
+  Then text displayed should be <text>
+  When user clicks on profile image
+  And user clicks on subscription
+ 	And user clicks on upgrade
+ 	And user clicks on proceed
+ 	And user clicks on credit card    
+  Examples:
+      | email 											| password | text |
+      | abhyasi.2@mailinator.com		| abhyasi | Meditate|
 
   #@add
   #Scenario Outline: Addition

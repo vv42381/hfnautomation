@@ -4,11 +4,17 @@ import constants.PropertyConfigs;
 import helpers.ConfigReader;
 import helpers.DateHelper;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.ios.IOSDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.HasInputDevices;
+import org.openqa.selenium.interactions.Keyboard;
 
+import java.awt.Robot;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -19,7 +25,8 @@ public class AppiumDriverUtil {
     private static final ThreadLocal<WebDriver> drivers = ThreadLocal.withInitial(() -> null);
     private static final int implicitWait = Integer.parseInt(ConfigReader.getInstance().getValue(PropertyConfigs.APPIUM_IMPLICIT_WAIT));
     public static final String driverType = ConfigReader.getInstance().getValue(PropertyConfigs.PLATFORM_NAME);
-
+    
+    
     public static WebDriver getDriver() {
         switch (driverType) {
             case "Android":
@@ -95,4 +102,5 @@ public class AppiumDriverUtil {
     public static byte[] getScreenshot() {
         return ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
     }
+    
 }

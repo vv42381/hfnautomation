@@ -58,6 +58,9 @@ public class AppiumDriverSetup {
         caps.setCapability("appActivity", APP_ACTIVITY);
         caps.setCapability("appPackage", APP_PACKAGE);
         caps.setCapability(MobileCapabilityType.APP, APP_PATH);
+        caps.setCapability("unicodeKeyboard", true);
+        caps.setCapability("resetKeyboard", true);
+
         return caps;
     }
 }
