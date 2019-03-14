@@ -10,6 +10,7 @@ public class PropertyConfigs {
     public static final String APP_ACTIVITY = "app.activity";
     public static final String APP_PACKAGE = "app.package";
     public static final String APP_PATH = "app.path";
+    public static final String APP_BUNDLEID = "app.bundleid";
     public static final String APPIUM_IMPLICIT_WAIT = "appium.implicitWait";
     public static final String APPIUM_EXPLICIT_WAIT = "appium.explicitWait";
 }
