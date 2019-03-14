@@ -22,4 +22,8 @@ public abstract class EditableField extends BaseField {
     public void submit() {
         getMobileElement().sendKeys(Keys.ENTER);
     }
+    
+    public void tap() {
+        getMobileElement().click();
+    }
 }

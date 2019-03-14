@@ -3,6 +3,7 @@ package base;
 import constants.PropertyConfigs;
 import helpers.ConfigReader;
 import helpers.DateHelper;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -11,13 +12,12 @@ import io.appium.java_client.ios.IOSDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.HasInputDevices;
-import org.openqa.selenium.interactions.Keyboard;
-
+import org.openqa.selenium.remote.RemoteWebDriver;
 import java.awt.Robot;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class AppiumDriverUtil {
@@ -27,19 +27,19 @@ public class AppiumDriverUtil {
     public static final String driverType = ConfigReader.getInstance().getValue(PropertyConfigs.PLATFORM_NAME);
     
     
-    public static WebDriver getDriver() {
+    public static AppiumDriver getDriver() {
         switch (driverType) {
             case "Android":
                 return (AndroidDriver) drivers.get();
             case "iOS":
                 return (IOSDriver) drivers.get();
             default:
-                return drivers.get();
+                return (AppiumDriver) drivers.get();
         }
     }
 
     public static void setDriver(WebDriver driver) {
-        drivers.set(driver);
+        drivers.set(driver);         
     }
 
     public static void sleep(Integer miliseconds) {
@@ -50,7 +50,7 @@ public class AppiumDriverUtil {
     }
 
     public static MobileElement getElement(By locator) {
-        return getDriver().findElement(locator);
+        return (MobileElement) getDriver().findElement(locator);
     }
 
     public static MobileElement getElement(MobileElement parent, By locator) {
@@ -101,6 +101,24 @@ public class AppiumDriverUtil {
 
     public static byte[] getScreenshot() {
         return ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
+    }
+    
+    public static void setContext() throws InterruptedException {
+    	String contextName = getDriver().getContext();
+    	System.out.println(contextName);
+    	if (contextName.contains("NATIVE_APP")) {
+    	System.out.println("Show me:" + contextName);
+    	Thread.sleep(1500);
+    	getDriver().context("NATIVE_APP");
+    	
+    	}
+    	if (contextName.contains("WEBVIEW")) {
+    	getDriver().context("WEBVIEW");
+    	}
+    }
+    
+    public static void hideKeyboard() {
+    	getDriver().hideKeyboard();
     }
     
 }

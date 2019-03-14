@@ -31,6 +31,24 @@ public class SubscriptionPageSteps extends BaseStep {
 
     	SubscriptionPage.clickCreditCard();
     }
+    
+    @When("user submits credit card details")
+    public void user_submits_credi_card_details() throws Throwable {
+
+    	SubscriptionPage.submitCreditCardDetails();
+    }
+    
+    @When("user submits credit card password")
+    public void user_submits_credi_card_password() throws Throwable {
+
+    	SubscriptionPage.submitCreditCardPassword();
+    }
+    
+    @Then("payment confirmation text displayed should be (.*)")
+    public void payment_confirmation_text_displayed_should_be(String text) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+    	AssertJUnit.assertEquals("Payment Successful!!", text, SubscriptionPage.getPaymentConfirmation());
+    }
 
 
 }

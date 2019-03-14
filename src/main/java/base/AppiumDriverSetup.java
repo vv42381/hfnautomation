@@ -60,6 +60,8 @@ public class AppiumDriverSetup {
         caps.setCapability(MobileCapabilityType.APP, APP_PATH);
         caps.setCapability("unicodeKeyboard", true);
         caps.setCapability("resetKeyboard", true);
+        caps.setCapability("setWebContentsDebuggingEnabled", true);
+        //caps.setCapability("autoWebview", true);
 
         return caps;
     }

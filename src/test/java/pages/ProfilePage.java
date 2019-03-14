@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 public class ProfilePage {
 
     public static final TextView textMeditate = new TextView(By.id("com.hfn.unified:id/title_meditation"));
-    public static final Button btn_subscription= new Button(By.id("com.hfn.unified:id/profile_grid_container"));
+    public static final Button btn_subscription= new Button(By.id("com.hfn.unified:id/profile_card6"));
     public static final Button btn_be_guided= new Button(By.id("com.hfn.unified:id/btn_view_more_meditation"));
     
     public static void clickSubscription() {

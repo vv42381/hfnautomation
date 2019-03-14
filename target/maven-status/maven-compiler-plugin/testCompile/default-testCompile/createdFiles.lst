@@ -1,2 +1,10 @@
-hooks/AppiumHooks.class
-Runner/TestRunner.class
+steps\MeditateHomePageSteps.class
+pages\MeditateHomePage.class
+pages\LoginPage.class
+steps\SubscriptionPageSteps.class
+Runner\TestRunner.class
+steps\ProfilePageSteps.class
+hooks\AppiumHooks.class
+pages\ProfilePage.class
+pages\SubscriptionPage.class
+steps\LoginPageSteps.class

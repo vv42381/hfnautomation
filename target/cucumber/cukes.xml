@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.768939">
-<testcase classname="Calculations" name="Open" time="24.768939">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="168.242353">
+<testcase classname="Heartsapp E2E test" name="Signin and subcribe" time="168.242353">
 <system-out><![CDATA[Given user open heartsapp...................................................passed
 When user clicks on signin..................................................passed
+And user clicks on accept policy............................................passed
+And user clicks on Email....................................................passed
+And user enters email abhyasi.2@mailinator.com..............................passed
+And user enters password abhyasi............................................passed
+And user clicks submit......................................................passed
+Then text displayed should be Meditate......................................passed
+When user clicks on profile image...........................................passed
+And user clicks on subscription.............................................passed
+And user clicks on upgrade..................................................passed
+And user clicks on proceed..................................................passed
+And user clicks on credit card..............................................passed
+And user submits credit card details........................................passed
+And user submits credit card password.......................................passed
+Then payment confirmation text displayed should be Payment Successful!!.....passed
 ]]></system-out>
 </testcase>
 </testsuite>
