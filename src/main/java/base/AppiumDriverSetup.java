@@ -36,13 +36,16 @@ public class AppiumDriverSetup {
 
     public static DesiredCapabilities getIOSCapabilities() {
         String DEVICE_UDID = ConfigReader.getInstance().getValue(PropertyConfigs.DEVICE_UDID);
+        String APP_BUNDLEID = ConfigReader.getInstance().getValue(PropertyConfigs.APP_BUNDLEID);
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM_NAME);
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, PLATFORM_VERSION);
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
         caps.setCapability(MobileCapabilityType.UDID, DEVICE_UDID);
-        caps.setCapability(MobileCapabilityType.APP, APP_PATH);
+        caps.setCapability("bundleId",APP_BUNDLEID);
+        caps.setCapability("xcodeOrgId","SVAZWU6ZYJ");
+        caps.setCapability("xcodeSigningId","iPhone Developer");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         return caps;
     }

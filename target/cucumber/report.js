@@ -122,7 +122,8 @@ formatter.match({
   "location": "SigninPageSteps.userOpensCalc()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: Application is not open\n\tat org.testng.AssertJUnit.fail(AssertJUnit.java:59)\n\tat org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)\n\tat steps.LoginPageSteps.userOpensCalc(LoginPageSteps.java:15)\n\tat ✽.user open heartsapp(src/test/java/resources/Features/Demo.feature:4)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "user clicks on signin",
@@ -132,7 +133,7 @@ formatter.match({
   "location": "SigninPageSteps.user_clicks_on_signin()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on accept policy",
@@ -142,7 +143,7 @@ formatter.match({
   "location": "LoginPageSteps.user_clicks_on_accept_policy()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on Email",
@@ -152,7 +153,7 @@ formatter.match({
   "location": "LoginPageSteps.user_clicks_on_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user enters email abhyasi.2@mailinator.com",
@@ -162,7 +163,7 @@ formatter.match({
   "location": "LoginPageSteps.user_enters_abhyasi_mailinator_com(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user enters password abhyasi",
@@ -172,7 +173,7 @@ formatter.match({
   "location": "LoginPageSteps.user_enters_abhyasi(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks submit",
@@ -182,7 +183,7 @@ formatter.match({
   "location": "LoginPageSteps.user_clicks_submit()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "text displayed should be Meditate",
@@ -192,7 +193,7 @@ formatter.match({
   "location": "MeditateHomePageSteps.text_displayed_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on profile image",
@@ -202,7 +203,7 @@ formatter.match({
   "location": "MeditateHomePageSteps.user_clicks_on_profile_image()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on subscription",
@@ -212,7 +213,7 @@ formatter.match({
   "location": "ProfilePageSteps.user_clicks_on_subscription()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on upgrade",
@@ -222,7 +223,7 @@ formatter.match({
   "location": "SubscriptionPageSteps.user_clicks_on_upgrade()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on proceed",
@@ -232,7 +233,7 @@ formatter.match({
   "location": "SubscriptionPageSteps.user_clicks_on_proceed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on credit card",
@@ -242,7 +243,7 @@ formatter.match({
   "location": "SubscriptionPageSteps.user_clicks_on_credi_card()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user submits credit card details",
@@ -252,7 +253,7 @@ formatter.match({
   "location": "SubscriptionPageSteps.user_submits_credi_card_details()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user submits credit card password",
@@ -262,7 +263,7 @@ formatter.match({
   "location": "SubscriptionPageSteps.user_submits_credi_card_password()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "payment confirmation text displayed should be Payment Successful!!",
@@ -272,7 +273,7 @@ formatter.match({
   "location": "SubscriptionPageSteps.payment_confirmation_text_displayed_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
   "status": "passed"
