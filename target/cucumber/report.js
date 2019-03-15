@@ -119,7 +119,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginPageSteps.userOpensCalc()"
+  "location": "SigninPageSteps.userOpensCalc()"
 });
 formatter.result({
   "status": "passed"
@@ -129,7 +129,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginPageSteps.user_clicks_on_signin()"
+  "location": "SigninPageSteps.user_clicks_on_signin()"
 });
 formatter.result({
   "status": "passed"

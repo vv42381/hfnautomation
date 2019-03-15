@@ -2,8 +2,10 @@ steps\MeditateHomePageSteps.class
 pages\MeditateHomePage.class
 pages\LoginPage.class
 steps\SubscriptionPageSteps.class
+pages\SigninPage.class
 Runner\TestRunner.class
 steps\ProfilePageSteps.class
+steps\SigninPageSteps.class
 hooks\AppiumHooks.class
 pages\ProfilePage.class
 pages\SubscriptionPage.class
