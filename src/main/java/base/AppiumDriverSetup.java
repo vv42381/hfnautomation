@@ -64,7 +64,8 @@ public class AppiumDriverSetup {
         caps.setCapability("unicodeKeyboard", true);
         caps.setCapability("resetKeyboard", true);
         caps.setCapability("setWebContentsDebuggingEnabled", true);
-        //caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
         //caps.setCapability("autoWebview", true);
 
         return caps;

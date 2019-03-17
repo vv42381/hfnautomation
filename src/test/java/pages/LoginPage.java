@@ -56,8 +56,9 @@ public class LoginPage {
     	email_signin.click();
     }
     
-    public static void enterEmail(String value) {
+    public static void enterEmail(String value) throws InterruptedException {
     	//email.setValue(value);
+    	Thread.sleep(3000);
     	email.sendKeys(value);
     }
     

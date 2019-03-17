@@ -5,9 +5,11 @@ import elements.Checkbox;
 import elements.TextBox;
 import elements.TextView;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -22,8 +24,15 @@ public class MeditateHomePage {
 	@FindBy(id="com.hfn.unified:id/title_meditation")
 	public static WebElement textMeditate;
 	
-	@FindBy(id="com.hfn.unified:id/profile_image")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/profile_image"),
+	@FindBy(name="avatar")
+	})
+	@iOSFindBy(accessibility="avatar") //XCUIElementTypeButton[@name="avatar"]
 	public static WebElement btn_profile_image;
+	
+	@FindBy(id="android:id/button3")
+	public static WebElement btn_ignore;
 	
 	@FindBy(id="com.hfn.unified:id/btn_view_more_meditation")
 	public static WebElement btn_be_guided;
@@ -45,6 +54,11 @@ public class MeditateHomePage {
     public static String getText() throws InterruptedException {
         //return textMeditate.getValue();
     	Thread.sleep(12000);
+    	if(btn_ignore.isDisplayed())
+    	{
+    		btn_ignore.click();
+    	}
+    	Thread.sleep(3000);
         return textMeditate.getText();
     }
 

@@ -121,4 +121,18 @@ public class AppiumDriverUtil {
     	getDriver().hideKeyboard();
     }
     
+    public static void enterTextByJavaScript(WebElement element, String text) {
+		if (!text.equals("IGNORE")) {
+			((JavascriptExecutor) getDriver()).executeScript("arguments[0].value='" + text + "';", element);
+		}
+	}
+    
+    public static void enterTextByJavaScript(String by, String text) {
+		if (!text.equals("IGNORE")) {
+			WebElement element = getDriver().findElement(By.xpath(by));
+			((JavascriptExecutor) (WebDriver) getDriver()).executeScript("arguments[0].value='" + text + "';", element);
+			((JavascriptExecutor) getDriver()).executeScript("document.getElementsByXpath('"+by+"').value='"+text+"'");
+		}
+	}
+    
 }

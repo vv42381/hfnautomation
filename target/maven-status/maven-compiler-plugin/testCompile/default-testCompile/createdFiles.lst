@@ -1,9 +1,11 @@
 steps/MeditateHomePageSteps.class
 hooks/AppiumHooks.class
+steps/SigninPageSteps.class
 pages/ProfilePage.class
 pages/SubscriptionPage.class
 pages/MeditateHomePage.class
 steps/SubscriptionPageSteps.class
+pages/SigninPage.class
 steps/LoginPageSteps.class
 pages/LoginPage.class
 Runner/TestRunner.class

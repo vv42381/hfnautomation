@@ -5,6 +5,7 @@ import elements.Checkbox;
 import elements.TextBox;
 import elements.TextView;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -26,8 +27,9 @@ public class ProfilePage {
     //public static final Button btn_subscription= new Button(By.id("com.hfn.unified:id/profile_card6"));
 
     
-    public static void clickSubscription() {
+    public static void clickSubscription() throws InterruptedException {
     	//btn_subscription.tap();
+    	Thread.sleep(12000);
     	btn_subscription.click();
     }
  
