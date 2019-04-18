@@ -29,8 +29,10 @@ public class IntrospectPage {
         this.driver = driver; 
         PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(id="com.hfn.unified:id/title_introspection")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/title_introspection"),
+	@FindBy(xpath="//XCUIElementTypeStaticText[@name=\"Introspect\"]")
+	})
 	public static WebElement textIntrospect;
 	
 	@FindAll({
@@ -43,7 +45,10 @@ public class IntrospectPage {
 	@FindBy(id="android:id/button3")
 	public static WebElement btn_ignore;
 	
-	@FindBy(id="com.hfn.unified:id/btn_view_more_introspection")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/btn_view_more_introspection"),
+	@FindBy(xpath="//XCUIElementTypeButton[@name=\"Make Note\"]")
+	})
 	public static WebElement btn_make_note;
 	
 	@FindBy(id="com.hfn.unified:id/toolbar_title")

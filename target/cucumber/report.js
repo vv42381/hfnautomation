@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "Check all screens",
+  "name": "iOS",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -19,31 +19,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "user clicks on signin",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user clicks on accept policy",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks on Email",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enters email \u003cemail\u003e",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enters password \u003cpassword\u003e",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks submit",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "text displayed should be \u003cMeditation text\u003e",
+  "name": "text displayed should be \u003ctitle text\u003e",
   "keyword": "Then "
 });
 formatter.step({
@@ -58,70 +34,6 @@ formatter.step({
   "name": "user clicks on make note",
   "keyword": "When "
 });
-formatter.step({
-  "name": "text displayed in toolbar should be \u003cJournal text\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user clicks back",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user swipes \u003cdirection\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "text displayed should be \u003cInspire text\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user clicks on be inspired",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "text displayed in toolbar should be \u003cInspire text\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user clicks back",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user swipes \u003cdirection\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "text displayed should be \u003cDiscover text\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user clicks on know more",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "text displayed in toolbar should be \u003cDiscover text\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user clicks back",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user swipes \u003cdirection\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "text displayed should be \u003cExplore text\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user clicks on view more",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "text displayed in toolbar should be \u003cExplore text\u003e",
-  "keyword": "Then "
-});
 formatter.examples({
   "name": "",
   "description": "",
@@ -131,32 +43,24 @@ formatter.examples({
       "cells": [
         "email",
         "password",
-        "Meditation text",
+        "title text",
         "Introspect text",
-        "direction",
-        "Inspire text",
-        "Discover text",
-        "Explore text",
-        "Journal text"
+        "direction"
       ]
     },
     {
       "cells": [
-        "abhyasi.2@mailinator.com",
+        "abhyasi.2000@mailinator.com",
         "abhyasi",
         "Meditate",
         "Introspect",
-        "right",
-        "Read \u0026 Reflect",
-        "Explore",
-        "Engage",
-        "Journal"
+        "right"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Check all screens",
+  "name": "iOS",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -174,66 +78,6 @@ formatter.step({
 });
 formatter.match({
   "location": "SigninPageSteps.userOpensCalc()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on signin",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SigninPageSteps.user_clicks_on_signin()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on accept policy",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginPageSteps.user_clicks_on_accept_policy()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on Email",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginPageSteps.user_clicks_on_Email()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters email abhyasi.2@mailinator.com",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginPageSteps.user_enters_abhyasi_mailinator_com(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters password abhyasi",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginPageSteps.user_enters_abhyasi(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks submit",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginPageSteps.user_clicks_submit()"
 });
 formatter.result({
   "status": "passed"
@@ -276,167 +120,8 @@ formatter.match({
   "location": "IntrospectPageSteps.user_clicks_on_make_note()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed in toolbar should be Journal",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_in_toolbar_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks back",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UtilSteps.user_clicks_back()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user swipes right",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UtilSteps.user_swipes(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed should be Read \u0026 Reflect",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on be inspired",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "InspirePageSteps.user_clicks_on_be_inspired()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed in toolbar should be Read \u0026 Reflect",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_in_toolbar_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks back",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UtilSteps.user_clicks_back()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user swipes right",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UtilSteps.user_swipes(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed should be Explore",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on know more",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "DiscoverPageSteps.user_clicks_on_know_more()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed in toolbar should be Explore",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_in_toolbar_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks back",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UtilSteps.user_clicks_back()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user swipes right",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UtilSteps.user_swipes(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed should be Engage",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on view more",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "ExplorePageSteps.user_clicks_on_view_more()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "text displayed in toolbar should be Engage",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonPageSteps.text_displayed_in_toolbar_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.id: com.hfn.unified:id/btn_view_more_introspection,By.xpath: /XCUIElementTypeButton[@name\u003d\"Make Note\"]})\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Vishnus-MacBook-Pro.local\u0027, ip: \u0027fd3c:678c:b4da:2e00:89ca:206d:f8f5:69fb%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: driver.version: IOSDriver\n\tat org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat pages.IntrospectPage.clickMakeNote(IntrospectPage.java:80)\n\tat steps.IntrospectPageSteps.user_clicks_on_make_note(IntrospectPageSteps.java:26)\n\tat ✽.user clicks on make note(src/test/java/resources/Features/Abhyasi.feature:75)\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"

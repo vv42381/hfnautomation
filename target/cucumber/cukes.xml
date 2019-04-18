@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="113.648827">
-<testcase classname="Heartsapp E2E test" name="Check all screens" time="113.648827">
-<system-out><![CDATA[Given user open heartsapp...................................................passed
-When user clicks on signin..................................................passed
-And user clicks on accept policy............................................passed
-And user clicks on Email....................................................passed
-And user enters email abhyasi.2@mailinator.com..............................passed
-And user enters password abhyasi............................................passed
-And user clicks submit......................................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="33.838451">
+<testcase classname="Heartsapp E2E test" name="iOS" time="33.838451">
+<failure message="org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.id: com.hfn.unified:id/btn_view_more_introspection,By.xpath: /XCUIElementTypeButton[@name=&quot;Make Note&quot;]})&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Vishnus-MacBook-Pro.local', ip: 'fd3c:678c:b4da:2e00:89ca:206d:f8f5:69fb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'&#10;Driver info: driver.version: IOSDriver&#10;&#9;at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)&#10;&#9;at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#10;&#9;at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#10;&#9;at com.sun.proxy.$Proxy18.click(Unknown Source)&#10;&#9;at pages.IntrospectPage.clickMakeNote(IntrospectPage.java:80)&#10;&#9;at steps.IntrospectPageSteps.user_clicks_on_make_note(IntrospectPageSteps.java:26)&#10;&#9;at ✽.user clicks on make note(src/test/java/resources/Features/Abhyasi.feature:75)&#10;"><![CDATA[Given user open heartsapp...................................................passed
 Then text displayed should be Meditate......................................passed
 When user swipes right......................................................passed
 Then text displayed should be Introspect....................................passed
-When user clicks on make note...............................................passed
-Then text displayed in toolbar should be Journal............................passed
-When user clicks back.......................................................passed
-When user swipes right......................................................passed
-Then text displayed should be Read & Reflect................................passed
-When user clicks on be inspired.............................................passed
-Then text displayed in toolbar should be Read & Reflect.....................passed
-When user clicks back.......................................................passed
-When user swipes right......................................................passed
-Then text displayed should be Explore.......................................passed
-When user clicks on know more...............................................passed
-Then text displayed in toolbar should be Explore............................passed
-When user clicks back.......................................................passed
-When user swipes right......................................................passed
-Then text displayed should be Engage........................................passed
-When user clicks on view more...............................................passed
-Then text displayed in toolbar should be Engage.............................passed
-]]></system-out>
+When user clicks on make note...............................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.id: com.hfn.unified:id/btn_view_more_introspection,By.xpath: /XCUIElementTypeButton[@name="Make Note"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Vishnus-MacBook-Pro.local', ip: 'fd3c:678c:b4da:2e00:89ca:206d:f8f5:69fb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'
+Driver info: driver.version: IOSDriver
+	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at pages.IntrospectPage.clickMakeNote(IntrospectPage.java:80)
+	at steps.IntrospectPageSteps.user_clicks_on_make_note(IntrospectPageSteps.java:26)
+	at ✽.user clicks on make note(src/test/java/resources/Features/Abhyasi.feature:75)
+]]></failure>
 </testcase>
 </testsuite>

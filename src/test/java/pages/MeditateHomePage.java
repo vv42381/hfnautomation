@@ -23,7 +23,10 @@ public class MeditateHomePage {
         PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="com.hfn.unified:id/title_meditation")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/title_meditation"),
+	@FindBy(xpath="//XCUIElementTypeStaticText[@name=\"Meditate\"]")
+	})
 	public static WebElement textMeditate;
 	
 	@FindAll({
@@ -36,7 +39,10 @@ public class MeditateHomePage {
 	@FindBy(id="android:id/button3")
 	public static WebElement btn_ignore;
 	
-	@FindBy(id="com.hfn.unified:id/btn_view_more_meditation")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/btn_view_more_meditation"),
+	@FindBy(xpath="//XCUIElementTypeButton[@name=\"Be Guided\"]")
+	})
 	public static WebElement btn_be_guided;
 	
     //public static final TextView textMeditate = new TextView(By.id("com.hfn.unified:id/title_meditation"));
@@ -56,9 +62,12 @@ public class MeditateHomePage {
     public static String getText() throws InterruptedException {
         //return textMeditate.getValue();
     	Thread.sleep(12000);
+    	if(AppiumDriverUtil.driverType=="Android")
+    	{
     	if(btn_ignore.isDisplayed())
     	{
     		btn_ignore.click();
+    	}
     	}
     	Thread.sleep(3000);
     	AppiumDriverUtil.setContext();

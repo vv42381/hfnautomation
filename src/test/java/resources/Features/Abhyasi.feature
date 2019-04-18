@@ -22,112 +22,64 @@ Feature: Heartsapp E2E test
       #| abhyasi.2@mailinator.com		| abhyasi 	| Meditate		| Payment Successful!! 	|
       #
 
-	Scenario Outline: Check all screens
+#	Scenario Outline: Check all screens
+  #Given user open heartsapp
+  #When user clicks on signin
+  #And user clicks on accept policy
+  #And user clicks on Email
+  #And user enters email <email>
+  #And user enters password <password>
+  #And user clicks submit
+  #Then text displayed should be <Meditation text>
+  #When user swipes <direction> 
+  #Then text displayed should be <Introspect text>
+  #When user clicks on make note
+  #Then text displayed in toolbar should be <Journal text>
+  #When user clicks on diary image
+  #When user clicks on add button
+  #When user enters journal text as date
+  #When user saves the entry
+  #Then validate journal entry is saved
+  #When user clicks back
+ #	When user swipes <direction>
+ #	Then text displayed should be <Inspire text>
+ #	When user clicks on be inspired
+ #	Then text displayed in toolbar should be <Inspire text>
+ #	When user clicks back
+ #	When user swipes <direction>
+ #	Then text displayed should be <Discover text>
+ #	When user clicks on know more
+ #	Then text displayed in toolbar should be <Discover text>
+ #	When user clicks back
+ #	When user swipes <direction> 	
+ #	Then text displayed should be <Explore text>
+ #	When user clicks on view more
+ #	Then text displayed in toolbar should be <Explore text>
+  #Examples:
+      #|email 									 | password | Meditation text | Introspect text | direction	| Inspire text | Discover text| Explore text |Journal text |
+      #|abhyasi.2@mailinator.com| abhyasi 	| Meditate				| Introspect 			| right 		|Read & Reflect| Explore			| Engage			 |Journal 			|
+
+Scenario Outline: iOS
   Given user open heartsapp
-  When user clicks on signin
-  And user clicks on accept policy
-  And user clicks on Email
-  And user enters email <email>
-  And user enters password <password>
-  And user clicks submit
-  Then text displayed should be <Meditation text>
-  When user swipes <direction> 
+  #When user clicks on profile image
+  #When user clicks on signin
+  #And user clicks on accept policy
+  #And user clicks on Email
+  #And user enters email <email>
+  #And user enters password <password>
+  #And user hides keyboard
+  #And user clicks submit
+  Then text displayed should be <title text>
+	When user swipes <direction> 
   Then text displayed should be <Introspect text>
   When user clicks on make note
-  Then text displayed in toolbar should be <Journal text>
-  When user clicks on diary image
-  When user clicks on add button
-  When user enters journal text as date
-  When user saves the entry
-  Then validate journal entry is saved
-  When user clicks back
- 	When user swipes <direction>
- 	Then text displayed should be <Inspire text>
- 	When user clicks on be inspired
- 	Then text displayed in toolbar should be <Inspire text>
- 	When user clicks back
- 	When user swipes <direction>
- 	Then text displayed should be <Discover text>
- 	When user clicks on know more
- 	Then text displayed in toolbar should be <Discover text>
- 	When user clicks back
- 	When user swipes <direction> 	
- 	Then text displayed should be <Explore text>
- 	When user clicks on view more
- 	Then text displayed in toolbar should be <Explore text>
+  #Then text displayed in toolbar should be <Journal text>
+  #When user clicks on diary image
+  #When user clicks on add button
+  #When user enters journal text as date
+  #When user saves the entry
+  #Then validate journal entry is saved
+  #When user clicks back
   Examples:
-      |email 									 | password | Meditation text | Introspect text | direction	| Inspire text | Discover text| Explore text |Journal text |
-      |abhyasi.2@mailinator.com| abhyasi 	| Meditate				| Introspect 			| right 		|Read & Reflect| Explore			| Engage			 |Journal 			|
-
-  #@add
-  #Scenario Outline: Addition
-    #When user tap ADD button <count> times
-    #Then the result should be <count>
-#
-    #Examples:
-      #| count |
-      #| 1		|
-      #| 3		|
-#
-  #@sub
-  #Scenario Outline: Subtraction
-    #When user tap SUBTRACT button <count> times
-    #Then the result should be <result>
-#
-    #Examples:
-      #| count | result |
-      #| 1		| -1	 |
-      #| 3		| -3	 |
-#
-  #@sqr
-  #Scenario Outline: Square root
-    #When user tap ADD button <add count> times
-    #And user tap SUBTRACT button <sub count> times
-    #And user tap SQUARE ROOT button <square count> times
-    #Then the result should be <result>
-#
-    #Examples:
-      #| add count | sub count | square count | result |
-      #| 4			| 	0		| 1		 	   | 2		|
-     #	| 0			| 	1		| 1	 		   | 0		|
-      #| 0			| 	0		| 3	 		   | 0		|
-#
-  #@div
-  #Scenario Outline: Division
-    #When user tap ADD button <add count> times
-    #And user tap SUBTRACT button <sub count> times
-    #And user tap DIVIDE by 2 button <div count> times
-    #Then the result should be <result>
-#
-    #Examples:
-      #| add count | sub count | div count | result |
-      #| 4			| 0			| 2  	 	| 1		 |
-      #| 0			| 4			| 2			| -1	 |
-      #| 3			| 0			| 1			| 1.5	 |
-#	| 0			| 0			| 1			| 0		 |
-#
-  #@mult
-  #Scenario Outline: Multiply
-    #When user tap ADD button <add count> times
-    #And user tap SUBTRACT button <sub count> times
-    #And user tap MULTIPLY by 2 button <mult count> times
-    #Then the result should be <result>
-#
-    #Examples:
-      #| add count | sub count | mult count | result |
-      #| 4			| 0			| 1  	 	 | 8	  |
-      #| 2			| 0			| 2			 | 8	  |
-      #| 0			| 4			| 3			 | -32	  |
-#
-  #@power
-  #Scenario Outline: Power
-    #When user tap ADD button <add count> times
-    #And user tap SUBTRACT button <sub count> times
-    #And user tap POWER by 2 button <power count> times
-    #Then the result should be <result>
-#
-    #Examples:
-      #| add count | sub count | power count | result |
-      #| 2			| 0			| 1  	 	  | 4	   |
-      #| 0			| 2			| 1			  | 4	   |
-      #| 3			| 0			| 2			  | 81	   |
+      | email 											| password 	| title text 	| Introspect text | direction	|
+      | abhyasi.2000@mailinator.com		| abhyasi 	| Meditate		| Introspect 			| right 		|

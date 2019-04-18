@@ -47,6 +47,8 @@ public class AppiumDriverSetup {
         caps.setCapability("xcodeOrgId","SVAZWU6ZYJ");
         caps.setCapability("xcodeSigningId","iPhone Developer");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
+        caps.setCapability("unicodeKeyboard", true);
+        caps.setCapability("resetKeyboard", true);
         return caps;
     }
 

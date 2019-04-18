@@ -26,5 +26,11 @@ public class UtilSteps extends BaseStep {
     	AppiumDriverUtil.goBack();
     	Thread.sleep(3000);
     }
+    
+    @When("user hides keyboard")
+    public void user_hides_keyboard() throws Throwable {
+    	AppiumDriverUtil.hideKeyboard();;
+    	Thread.sleep(3000);
+    }
 
 }

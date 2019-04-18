@@ -1,6 +1,7 @@
 package pages;
 
 import elements.Button;
+import org.openqa.selenium.support.FindAll;
 import elements.Checkbox;
 import elements.TextBox;
 import elements.TextView;
@@ -21,21 +22,36 @@ public class LoginPage {
         this.driver = driver; 
         PageFactory.initElements(driver, this);
 	}
-	@FindBy(id="com.hfn.unified:id/checkbox_policy")
+	
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/checkbox_policy"),
 	//@AndroidFindBy(xpath="//*[@id='com.hfn.unified:id/checkbox_policy']")
-	@AndroidFindBy(id="com.hfn.unified:id/checkbox_policy")
+	@FindBy(xpath="//XCUIElementTypeButton[@name=\"icon uncheck\"]")
+	})
 	public static WebElement chbx_policy;
 	
-	@FindBy(id="com.hfn.unified:id/btn_hfn_signin")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/btn_hfn_signin"),
+	@FindBy(xpath="//XCUIElementTypeButton[@name=\"icon mail\"]")
+	})
 	public static WebElement email_signin;
 	
-	@FindBy(id="com.hfn.unified:id/signin_email")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/signin_email"),
+	@FindBy(xpath="//XCUIElementTypeApplication[@name='HeartsApp']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeTextField")
+	})
 	public static WebElement email;
 	
-	@FindBy(id="com.hfn.unified:id/signin_password")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/signin_password"),
+	@FindBy(xpath="//XCUIElementTypeApplication[@name=\"HeartsApp\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeSecureTextField")
+	})
 	public static WebElement password;
 	
-	@FindBy(id="com.hfn.unified:id/btn_sign_in")
+	@FindAll({
+	@FindBy(id="com.hfn.unified:id/btn_sign_in"),
+	@FindBy(xpath="//XCUIElementTypeButton[@name=\"Sign In\"]")
+	})
 	public static WebElement btn_submit;
 	
     //public static final Button btn_wel_sign_in= new Button(By.id("com.hfn.unified:id/btn_wel_sign_in"));
