@@ -35,6 +35,11 @@ Feature: Heartsapp E2E test
   Then text displayed should be <Introspect text>
   When user clicks on make note
   Then text displayed in toolbar should be <Journal text>
+  When user clicks on diary image
+  When user clicks on add button
+  When user enters journal text as date
+  When user saves the entry
+  Then validate journal entry is saved
   When user clicks back
  	When user swipes <direction>
  	Then text displayed should be <Inspire text>
