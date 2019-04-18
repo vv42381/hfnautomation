@@ -19,11 +19,6 @@ public class MeditateHomePageSteps extends BaseStep {
 	
 	MeditateHomePage MeditateHomePage = new MeditateHomePage(driver);
         
-    @Then("text displayed should be (.*)")
-    public void text_displayed_should_be(String text) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-    	AssertJUnit.assertEquals("Wrong text", text, MeditateHomePage.getText());
-    }
     
     @When("user clicks on profile image")
     public void user_clicks_on_profile_image() throws Throwable {

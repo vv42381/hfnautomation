@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="122.275797">
-<testcase classname="Heartsapp E2E test" name="Signin and subcribe" time="122.275797">
-<failure message="org.openqa.selenium.InvalidElementStateException: io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Cannot set the element to '12'. Did you interact with the correct element?&#10;&#9;at io.appium.uiautomator2.handler.SendKeysToElement.safeHandle(SendKeysToElement.java:95)&#10;&#9;at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:36)&#10;&#9;at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:250)&#10;&#9;at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:241)&#10;&#9;at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)&#10;&#9;at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)&#10;&#9;at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)&#10;&#9;at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)&#10;&#9;at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)&#10;&#9;at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)&#10;&#9;at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;&#9;at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;&#9;at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)&#10;&#9;at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)&#10;&#9;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)&#10;&#9;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)&#10;&#9;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)&#10;&#9;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)&#10;&#9;at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)&#10;&#9;at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)&#10;&#9;at java.lang.Thread.run(Thread.java:761)&#10;&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Vishnus-MacBook-Pro.local', ip: 'fd3c:678c:b4da:2e00:4cc9:39b2:4c3d:da04%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/vishnu/eclipse-works..., appActivity: com.hfn.unified.view.splash..., appPackage: com.hfn.unified, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/vishnu/eclipse-works..., appActivity: com.hfn.unified.view.splash..., appPackage: com.hfn.unified, automationName: UiAutomator2, deviceName: emulator-5554, newCommandTimeout: 60, platformName: android, platformVersion: 7, setWebContentsDebuggingEnabled: true}, deviceApiLevel: 24, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 7.0, setWebContentsDebuggingEnabled: true, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 21c9105d-f704-4c6f-a186-fd08a61b83b5&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#10;&#9;at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#10;&#9;at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)&#10;&#9;at io.appium.java_client.MobileElement.execute(MobileElement.java:1)&#10;&#9;at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#10;&#9;at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)&#10;&#9;at pages.SubscriptionPage.submitCreditCardDetails(SubscriptionPage.java:125)&#10;&#9;at steps.SubscriptionPageSteps.user_submits_credi_card_details(SubscriptionPageSteps.java:45)&#10;&#9;at ✽.user submits credit card details(src/test/java/resources/Features/Demo.feature:17)&#10;"><![CDATA[Given user open heartsapp...................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="113.648827">
+<testcase classname="Heartsapp E2E test" name="Check all screens" time="113.648827">
+<system-out><![CDATA[Given user open heartsapp...................................................passed
 When user clicks on signin..................................................passed
 And user clicks on accept policy............................................passed
 And user clicks on Email....................................................passed
@@ -9,81 +9,25 @@ And user enters email abhyasi.2@mailinator.com..............................pass
 And user enters password abhyasi............................................passed
 And user clicks submit......................................................passed
 Then text displayed should be Meditate......................................passed
-When user clicks on profile image...........................................passed
-And user clicks on subscription.............................................passed
-And user clicks on upgrade..................................................passed
-And user clicks on proceed..................................................passed
-And user clicks on credit card..............................................passed
-And user submits credit card details........................................failed
-And user submits credit card password.......................................skipped
-Then payment confirmation text displayed should be Payment Successful!!.....skipped
-
-StackTrace:
-org.openqa.selenium.InvalidElementStateException: io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Cannot set the element to '12'. Did you interact with the correct element?
-	at io.appium.uiautomator2.handler.SendKeysToElement.safeHandle(SendKeysToElement.java:95)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:36)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:250)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:241)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:761)
-
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Vishnus-MacBook-Pro.local', ip: 'fd3c:678c:b4da:2e00:4cc9:39b2:4c3d:da04%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_191'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/vishnu/eclipse-works..., appActivity: com.hfn.unified.view.splash..., appPackage: com.hfn.unified, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/vishnu/eclipse-works..., appActivity: com.hfn.unified.view.splash..., appPackage: com.hfn.unified, automationName: UiAutomator2, deviceName: emulator-5554, newCommandTimeout: 60, platformName: android, platformVersion: 7, setWebContentsDebuggingEnabled: true}, deviceApiLevel: 24, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 7.0, setWebContentsDebuggingEnabled: true, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 21c9105d-f704-4c6f-a186-fd08a61b83b5
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
-	at pages.SubscriptionPage.submitCreditCardDetails(SubscriptionPage.java:125)
-	at steps.SubscriptionPageSteps.user_submits_credi_card_details(SubscriptionPageSteps.java:45)
-	at ✽.user submits credit card details(src/test/java/resources/Features/Demo.feature:17)
-]]></failure>
+When user swipes right......................................................passed
+Then text displayed should be Introspect....................................passed
+When user clicks on make note...............................................passed
+Then text displayed in toolbar should be Journal............................passed
+When user clicks back.......................................................passed
+When user swipes right......................................................passed
+Then text displayed should be Read & Reflect................................passed
+When user clicks on be inspired.............................................passed
+Then text displayed in toolbar should be Read & Reflect.....................passed
+When user clicks back.......................................................passed
+When user swipes right......................................................passed
+Then text displayed should be Explore.......................................passed
+When user clicks on know more...............................................passed
+Then text displayed in toolbar should be Explore............................passed
+When user clicks back.......................................................passed
+When user swipes right......................................................passed
+Then text displayed should be Engage........................................passed
+When user clicks on view more...............................................passed
+Then text displayed in toolbar should be Engage.............................passed
+]]></system-out>
 </testcase>
 </testsuite>

@@ -13,6 +13,8 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import base.AppiumDriverUtil;
+
 public class MeditateHomePage {
 	public AppiumDriver driver;
 	
@@ -59,6 +61,7 @@ public class MeditateHomePage {
     		btn_ignore.click();
     	}
     	Thread.sleep(3000);
+    	AppiumDriverUtil.setContext();
         return textMeditate.getText();
     }
 
